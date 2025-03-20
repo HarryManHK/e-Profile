@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Man - IT E-Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate.css for strong animation effects -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- jQuery and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="navbar">
+        <div class="logo"><a href="#">HarryMan's Profile</a></div>
+        <ul class="links">
+            <li><a href="#hero1">Home</a></li>
+            <li><a href="#hero2">About Me</a></li>
+            <li><a href="#hero3">Portfolio</a></li>
+            <li><a href="#hero4">Career Goals</a></li>
+            <li><a href="#hero5">Contact</a></li>
+        </ul>
+        <!-- Replaced Login button with GitHub icon -->
+        <a href="https://github.com/HarryManHK" target="_blank" class="github_btn">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</header>
+
+<!-- Hero Section (Home) with Video Background and Strong Animation -->
+<section id="hero1" class="d-flex justify-content-center align-items-center hero-section">
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="https://cdn.pixabay.com/video/2017/06/28/10339-865412856_large.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="text-center text-white content-overlay animate__animated animate__bounceInDown">
+        <!-- Self Image Added -->
+        <img src="self_image.jpeg" alt="Harry Man" class="profile-img img-fluid rounded-circle mb-3" />
+        <h1>Welcome to My E-Profile</h1>
+        <p class="lead">Building the Future Through Code and Innovation</p>
+        <a href="#hero2" class="btn btn-primary mt-3">Discover More</a>
+    </div>
+</section>
+
+<!-- About Me Section (Part A) -->
+<section id="hero2" class="d-flex justify-content-center align-items-center hero-section" style="background: #222;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 text-center text-white animate__animated animate__fadeInUp">
+                <h1>About Me</h1>
+                <p class="lead">
+                    Hi, I’m Harry Man – a passionate IT student with a focus on software development.
+                    I hold a High dip in Software Engineering and have a deep interest in creating impactful tech solutions.
+                </p>
+                <p>
+                    <strong>Key Competencies:</strong>
+                    <ul class="list-unstyled">
+                        <li>Programming (Java (Mobile app development & Web Application), Python, C# )</li>
+                        <li>AI framework (YOLO)</li>
+                        <li>Web Development (HTML, CSS, JavaScript (jQuery, DOM, AJAX), PHP)</li>
+                        <li>Database Management (SQL, MySQL, OracleDB)</li>
+                        <li>Operating Systems (Windows 10, Mac OS, Linux Ubuntu)</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Artifacts & Achievements:</strong>
+                    <ul class="list-unstyled">
+                        <li>Huawei ICT Competition Hong Kong SAR 2023-2024 [Cloud Track]</li>
+                        <li>Outstanding Industrial Attachment Scholarships (OIAS) 2024 -- VTC</li>
+                        <li>Leading a team to do a Final Year Project </li>
+                        <li>One person doing the work of four in sem2 group project which get a A- grade.</li>
+                    </ul>
+                </p>
+                <a href="#hero3" class="btn btn-primary mt-3">Explore My Portfolio</a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section (Part C) -->
+<section id="hero3" class="d-flex justify-content-center align-items-center hero-section" style="background: #333;">
+    <div class="container text-center content-overlay">
+        <div class="text-overlay-bg animate__animated animate__zoomIn">
+            <h1 class="mb-4">Projects</h1>
+            <p class="lead mb-5">A showcase of my technical skills and accomplishments.</p>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Project Card -->
+            <div class="col-md-4 mb-4" id="VistaAppCard">
+                <div class="card bg-dark text-white h-100 shadow animate__animated animate__zoomIn">
+                    <img src="vista_logo.png" class="card-img-top" alt="E-commerce Project">
+                    <div class="card-body overlay-bg d-flex flex-column">
+                        <h5 class="card-title">Vista Moblie App</h5>
+                        <p class="card-text">A AI Moblie App - Help Visually Impaired Persons to find the Bus Stop.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Certification Card -->
+            <div class="col-md-4 mb-4" id="GameCard">
+                <div class="card bg-dark text-white h-100 shadow animate__animated animate__zoomIn">
+                    <img src="MathematicsGame_logo.png" class="card-img-top" alt="Certificate">
+                    <div class="card-body overlay-bg d-flex flex-column">
+                        <h5 class="card-title">MathematicsGame</h5>
+                        <p class="card-text">A mathematics Game for kid to learn mathematics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#hero4" class="btn btn-primary mt-3">See My Career Goals</a>
+    </div>
+</section>
+
+<!-- Career Goals & Plan Section (Part B) -->
+<section id="hero4" class="d-flex justify-content-center align-items-center hero-section" style="background: #444;">
+    <div class="container text-center content-overlay animate__animated animate__fadeInLeft">
+        <h1 class="mb-4">Career Goals & Plan</h1>
+        <p class="lead mb-4">
+            My career goal is to become a Senior Software Engineer specializing in cybersecurity at a top tech firm within 5 years.
+        </p>
+        <div class="text-start mx-auto" style="max-width: 600px;">
+            <h5>Steps to Reach My Goal:</h5>
+            <ul class="list-unstyled">
+                <li>- Earn a Computing & AI degree in Hong Kong PolyU by 2027.</li>
+                <li>- Learn the Spring boot and React.js .</li>
+                <li>- Continues to development to VISTA App to help Visually Impaired Persons.</li>
+            </ul>
+            <h5 class="mt-4">Necessary Skills to Learn:</h5>
+            <ul class="list-unstyled">
+                <li>- Skill: Advanced Java for Web Development</li>
+                <li>  Plan: Learn the spring boot by mid-2025</li>
+                <li>- Skill: Multi platform Mobile Development</li>
+                <li>  Plan: Learn React-nactive by mid-2026</li>
+                <li>- Skill: AWS Certification (AWS SAA & AWS Developer)</li>
+                <li>  Plan: Obtain certification by 2030</li>
+            </ul>
+        </div>
+        <a href="#hero5" class="btn btn-primary mt-3">Contact Me</a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="hero5" class="d-flex justify-content-center align-items-center hero-section" style="background: #555;">
+    <div class="text-center text-white animate__animated animate__fadeIn">
+        <h1>Contact Me</h1>
+        <p class="lead">
+            Let’s connect to discuss tech innovations!<br>
+            Phone: +852-4467 8880<br>
+            Email: inbox@harryman.cc<br>
+            GitHub: HarryManHK
+        </p>
+        <a href="#hero1" class="btn btn-primary mt-3">Back to Top</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light py-4">
+    <div class="container text-center">
+        <p>© 2025 HarryMan. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- JavaScript for Navbar Toggle and Responsive Adjustments -->
+<script>
+    $(document).ready(function () {
+        var menuIcon = document.createElement('i');
+        menuIcon.classList.add('fas', 'fa-bars', 'menu-icon');
+        var navbar = document.querySelector('.navbar');
+        navbar.appendChild(menuIcon);
+        var navLinks = document.querySelector('.navbar .links');
+        var actionBtn = document.querySelector('.navbar .github_btn'); // Updated to github_btn
+        menuIcon.addEventListener('click', function () {
+            navLinks.classList.toggle('show');
+        });
+        function adjustActionButton() {
+            if (window.innerWidth <= 768) {
+                if (!navLinks.contains(actionBtn)) {
+                    navLinks.appendChild(actionBtn);
+                }
+            } else {
+                if (!navbar.contains(actionBtn)) {
+                    navbar.appendChild(actionBtn);
+                }
+            }
+        }
+        adjustActionButton();
+        window.addEventListener('resize', adjustActionButton);
+
+        $("#VistaAppCard").on("click", function(){
+            window.location.href = "https://github.com/HarryManHK/Vista";
+        });
+        $("#GameCard").on("click", function(){
+            window.location.href = "https://github.com/HarryManHK/MathematicsGame";
+        });
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>

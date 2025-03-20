@@ -1,0 +1,336 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Switched to Poppins for a modern, clean look */
+}
+
+body {
+    background-color: #0a0a0a; /* Darker, more elegant background */
+    color: #e0e0e0; /* Softer white for better readability */
+    line-height: 1.6;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00d4ff; /* Bright cyan for hover effect, IT-themed */
+}
+
+/* Header Styles */
+header {
+    position: fixed; /* Fixed header for a sleek experience */
+    top: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background: linear-gradient(135deg, #1a1a1a, #0f0f0f); /* Subtle gradient */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px; /* Slightly taller for better presence */
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #00d4ff; /* Cyan logo for tech vibe */
+    letter-spacing: 1px;
+}
+
+.navbar .links {
+    padding-top: 10px;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.action_btn {
+    background: linear-gradient(45deg, #00d4ff, #007bff); /* Gradient button */
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+
+.action_btn:hover {
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+    color: #fff;
+}
+
+.action_btn:active {
+    transform: translateY(1px);
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Video Background Styles */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.8); /* Slightly dimmed for text contrast */
+}
+
+/* Content Overlay Styles */
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    border-radius: 15px;
+}
+
+.content-overlay h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00d4ff;
+    text-shadow: 2px 2px 10px rgba(0, 212, 255, 0.5);
+}
+
+.content-overlay p.lead {
+    font-size: 1.4rem;
+    color: #d0d0d0;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #00d4ff, #007bff);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.5);
+}
+
+/* Section-Specific Backgrounds */
+#hero2, #hero3, #hero4, #hero5 {
+    background: linear-gradient(135deg, #1a1a1a, #0f0f0f); /* Unified gradient for consistency */
+}
+
+/* Card Styles (Portfolio Section) */
+.card {
+    background: #1f1f1f;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+}
+
+.card-img-top {
+    height: 200px;       
+    object-fit: contain;
+    width: 100%;    
+    padding-top: 20px;     
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #00d4ff;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+/* Text Overlay Background */
+.text-overlay-bg {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+    color: #b0b0b0;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 2rem 0;
+        height: calc(100vh - 60px);
+        text-align: center;
+    }
+
+    .navbar .links.show {
+        display: flex;
+    }
+
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .links .action_btn {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #00d4ff;
+    }
+
+    .content-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .content-overlay p.lead {
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+    display: none;
+}
+
+/* Additional Beautification */
+ul.list-unstyled li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+ul.list-unstyled li:before {
+    content: "▹";
+    color: #00d4ff;
+    position: absolute;
+    left: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.profile-img  {
+    border: 3px #fefefeaf;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url($img) no-repeat center center;
+    background-size: cover;
+    /* Reflection effect below the avatar */
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent 50%, rgba(0, 0, 0, 0.2));
+    
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        background-size: 100% 100%;
+        border-radius: 50%;
+        transform: scale(0.95);
+        z-index: -1;
+        animation: filterChange 10s infinite linear;
+    }
+}
+
+p {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-family: Righteous;
+}
+
+@keyframes filterChange {
+    0% {
+        top: 0;
+        filter: blur(0) brightness(101%) opacity(1);
+    }
+    40% {
+        top: 10%;
+        filter: blur(0) brightness(101%) opacity(1);
+    }
+    80% {
+        top: 10%;
+        filter: blur(10px) brightness(80%) opacity(0.8);
+    }
+    100% {
+        top: 10%;
+        filter: blur(10px) brightness(80%) opacity(0.8);
+    }
+}
